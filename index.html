@@ -53,7 +53,7 @@
       </div>
    
     <script>
-      // The value for 'accessToken' begins with 'pk...'
+
       mapboxgl.accessToken = 'pk.eyJ1Ijoiam1jYXZhbmF1Z2giLCJhIjoiY205aXQxbGEwMDVpeDJqcG5qMTY5NmM3NyJ9.AQQfTcTF2o71Xd4PlbQspg';
       const map = new mapboxgl.Map({
         container: 'map',
@@ -61,10 +61,7 @@
         center: [-71.872809,42.370999],
         zoom: 7
       });
-      /*
-    Add an event listener that runs when a user clicks on the map element.
-    */
-    map.on('load', () => {
+  
   const legend = new mapboxgl.Legend({
     container: 'legend',
     map: map
@@ -104,9 +101,6 @@ const popup = new mapboxgl.Popup({ offset: [0, -15] })
   )
   .addTo(map);});
 
-      // Code from the next step will go here.
-   
-      const visibility = map.getLayoutProperty('places_of_worship', 'visibility');
-      console.log(visibility); // Should log 'visible'</script>
+</script>
   </body>
 </html>
